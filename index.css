@@ -1,0 +1,155 @@
+/* global : reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* global : variables */
+:root {
+    
+    /* color variabls */
+    --black: #000;
+    --white: #FFF;
+    --grey: #8B8B8B;
+    --main: #042331;
+
+    /* font style */
+    --f-main: 'Mukta', sans-serif;
+    --f-alt:  'Orbitron', sans-serif;
+
+    /* font size */
+    --f-mob: 1rem;
+    --f-tab: 1.2rem;
+    --f-des: 1.4rem;
+
+    /* icon */
+    --i-mob: 1rem;
+    --i-tab: 1.3rem;
+    --i-des: 1.5rem;
+    
+    /* spacing */
+    --lg: 8%;
+    --md: 4%;
+    --sm: 2%;
+    
+    /* overlay */
+    --o-main: rgba(0,0,0,0.5);
+    --o-light: rgba(122, 122, 122, 0.5);
+    
+    /* dev borders */
+    --wireframe: 3px solid darkblue;
+    --component: 3px dotted darkgreen;
+    --debugging: 3px dotted darkred;
+
+}
+
+/* page */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.page nav,
+.page header,
+.page section,
+.page main,
+.page article,
+.page footer {
+    max-width: 1920px;
+}
+
+/* grids */
+header,
+article,
+section,
+footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(25px, auto);
+
+    width: 100%;
+}
+
+/* flex */
+.elmnts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* header */
+header {
+    min-height: 10vh;
+
+
+    border: var(--wireframe);
+}
+header .elmnts {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+/* main */
+main {
+    min-height: 100vh;
+
+    border: var(--wireframe);
+}
+main .elmnts {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+/* pre */
+#pre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#pre li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 200px;
+}
+#pre li img {
+    height: 100%;
+    width: 100%;
+}
+
+/* section */
+section {
+    min-height: 100vh;
+
+    border: var(--wireframe);
+}
+section .elmnts {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+/* footer */
+footer {
+    min-height: 100vh;
+
+    border: var(--wireframe);
+}
+footer .elmnts {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+/* mod */
+#mod {
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(25px, auto);
+    
+}
