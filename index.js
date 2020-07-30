@@ -201,6 +201,55 @@ function docFrag() {
 }
 
 
+
+// media query listener
+mql = (mq)=> {
+
+    if (mq.matches) {
+
+        app.style.background = 'black';
+
+        // test
+        console.log('MQL : desktop');
+    }
+    else {
+        app.style.background = 'purple';
+
+        // test
+        console.log('MQL : mobile');
+    }
+
+}
+// media query selector
+let mq = window.matchMedia('(min-width: 700px)');
+
+// call listener function at run time
+mql(mq);
+
+// attach listener function on state change
+mq.addListener(mql);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // assign [ opn ] button to [ spn]
 // for (i = 0; i <= 1; i++) {
 
